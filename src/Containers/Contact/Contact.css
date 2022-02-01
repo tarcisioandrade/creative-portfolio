@@ -1,0 +1,53 @@
+.contact {
+  display: grid;
+  grid-template-columns: 25rem 1fr;
+  padding-bottom: 4rem;
+}
+
+.contact__title {
+  padding-bottom: 1.5rem;
+}
+
+.contact__sociais {
+  justify-self: right;
+}
+
+.contact__subtitle {
+  font-size: 1rem;
+  font-family: var(--font-qanelas);
+  color: var(--font-color-titles);
+  letter-spacing: 0.05rem;
+}
+
+.contact__icons {
+  display: flex;
+  align-items: center;
+}
+
+.contact__icons a {
+  margin: 2rem;
+}
+
+.contact__icons a:first-child {
+  margin-left: 0;
+}
+
+.contact__icons a:last-child {
+  margin-right: 0;
+}
+
+.contact__copy {
+  margin-top: 5rem;
+}
+
+@media screen and (max-width: 37.5rem) {
+  .contact {
+    grid-template-columns: 1fr;
+    padding-bottom: 4rem;
+  }
+
+  .contact__sociais {
+    justify-self: initial;
+    margin-top: 4rem;
+  }
+}

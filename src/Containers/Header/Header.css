@@ -1,0 +1,125 @@
+.mainHeader__boxlogo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mainHeader__logo {
+  font-size: 1.5625rem;
+  color: var(--font-color-titles);
+  font-family: var(--font-quicksand);
+  text-transform: uppercase;
+}
+
+.mainHeader__start {
+  color: var(--font-color-titles);
+}
+
+.mainHeader__start::after {
+  content: "";
+  display: block;
+  width: 45px;
+  height: 3px;
+  background-color: var(--background-gold);
+  border-radius: 2px;
+  margin-left: auto;
+  margin-top: .3rem;
+}
+
+.headercontent {
+  display: grid;
+  grid-template-columns: 30rem auto 1fr;
+  justify-content: center;
+  margin-top: 3rem;
+}
+
+.headercontent__texts {
+  padding-top: 2rem;
+}
+
+.headercontent__text--p {
+  line-height: 1.7;
+  max-width: 22rem;
+  margin: 1.5rem 0;
+}
+
+.headercontent__img {
+  position: relative;
+}
+
+.headercontent__img--dev {
+  position: relative;
+  z-index: 12;
+}
+
+.headercontent__img--pontilhado {
+  position: absolute;
+  right: -2rem;
+  bottom: -2rem;
+  z-index: 1;
+}
+
+.headercontent__data {
+  padding-left: 5rem;
+}
+
+.headercontent__ul {
+  list-style: none;
+}
+
+.headercontent__li {
+  padding: 1.5rem 0;
+}
+.maincontent__tracos {
+  position: absolute;
+  right: 0;
+  top: 8rem;
+}
+
+@media screen and (max-width: 64rem) {
+  .headercontent {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    margin-top: 3rem;
+  }
+
+  .headercontent__texts {
+    align-self: flex-start;
+  }
+  .headercontent__img--pontilhado {
+    right: 2rem;
+  }
+  .headercontent__data {
+    padding-top: 1rem;
+    padding-left: 0;
+    grid-column: 1 / 3;
+  }
+  .headercontent__ul {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .headercontent__li {
+    justify-self: center;
+  }
+}
+
+@media screen and (max-width: 42.86rem) {
+  .headercontent {
+    display: flex;
+    flex-direction: column;
+  }
+  .headercontent__img {
+    margin-top: 2rem;
+  }
+  .headercontent__img--pontilhado {
+    right: -1rem;
+  }
+  .headercontent__ul {
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+  }
+  .headercontent__li {
+    justify-self: initial;
+  }
+}

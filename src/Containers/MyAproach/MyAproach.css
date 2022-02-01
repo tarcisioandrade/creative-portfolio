@@ -1,0 +1,37 @@
+.myaproach__cards {
+  display: flex;
+  margin-top: 2rem;
+}
+
+.myaproach__item {
+  background-color: var(--background--semiblack);
+  margin: 1.5rem;
+  padding: 2rem 1.5rem;
+  border-top: 4px solid var(--font-color-texts);
+}
+.myaproach__item:first-child {
+  margin-left: 0;
+}
+.myaproach__item:last-child {
+  margin-right: 0;
+}
+
+.myaproach__subtitle {
+  padding: 1rem 0;
+  font-size: 1.875rem;
+  font-family: var(--font-qanelas);
+  color: var(--font-color-titles);
+}
+
+.myaproach__text {
+  line-height: 1.7;
+}
+
+@media screen and (max-width: 48rem) {
+  .myaproach__cards {
+    flex-direction: column;
+  }
+  .myaproach__item {
+    margin: 1.5rem 0;
+  }
+}
